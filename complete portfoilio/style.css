@@ -1,0 +1,646 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+  }
+  
+  .active, .dot:hover {
+    background-color:black;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  .top{
+      text-align: center;
+      margin-top: 20px;
+  }
+  .top h1{
+    font-size: 2.5rem;
+    margin-top: 20px;
+  }
+  .top p{
+      font-size:.8rem;
+  }
+/*start header */
+header{
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: .3%;   
+}
+nav{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:rgba(58, 167, 161, 0.3);
+}
+nav .menu{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: 1px;
+}
+nav .menu a{
+    width: 10%;
+    text-decoration: none;
+    color: black;
+    justify-content: right;
+}
+nav a img{
+    filter: (0);
+    transition: .3s ease filter;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+nav .info ul li{
+    list-style: none;
+    display: inline;
+}
+nav .info ul li input{
+    border-radius: 40px; 
+    height: 30px;
+    width: 120px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: gainsboro;
+}
+/* end header*/
+
+/*start menu bar */
+#menu-bar{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-top: -1%;
+}
+#menu-bar img{
+    margin-top: 9px;
+    margin-left: 5%;
+    height: 70px;
+    width: 200px;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    margin-right: 2%;
+    margin-bottom: -15px;
+    margin-top: 2%;
+    word-spacing: 1px;
+}
+.menu-bar ul li{
+    width:100%;
+    margin: 3px;
+    padding: 10px;
+    float: right;
+    font-size: 13px;
+}
+.menu-bar li a{
+    text-decoration: none;
+    color: black;
+}
+/*end menu bar */
+
+
+/*start after nav barr section*/
+#Services{
+    background-color:rgba(37, 211, 202, 0.3);
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+   }
+   #Services h1{
+     padding-bottom: 30px;
+     font-size: 3rem;
+   }
+   #Services p{
+     font-size: 1.1rem;
+     padding-bottom: 30px;
+   }
+   #Services button{
+    border-radius: 40px; 
+    height: 35px;
+    width: 150px;
+    margin-top: -15px;
+    font-size: 1rem;
+   }
+   /*End after nav bar section*/
+
+/*advantage section*/
+#boxes{
+    text-align: center;
+}
+#boxes .boxes{
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-top: 4%;
+}
+#boxes #box-1{
+    width: 100px;
+    background-color:white;
+    border: black;
+    border-radius: 10px;
+    width: 200px;
+}
+#boxes #box-2{
+    margin-left: 4%;
+    background-color:white;
+    border: black;
+    border-radius: 10px;
+    width: 200px;
+}
+#boxes #box-3{
+    margin-left: 4%;
+    background-color:white ;
+    border: black;
+    border-radius: 10px;
+    width: 200px;
+}
+#boxes #box-4{
+    margin-left: 4%;
+    background-color: white;
+    border: black;
+    width: 200px;
+    border-radius: 10px;
+}
+#boxes #box-5{
+    margin-left: 4%;
+    margin-right: 1%;
+    width: 200px;
+    background-color: white;
+    border: black;
+    border-radius: 10px;
+}
+#boxes .boxes h2{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+#boxes .boxes p{
+    font-size: .7rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    line-height: 0.9rem;
+}
+#boxes .boxes img{
+    margin-top: 0;
+    margin-bottom: 1%;
+    height: 80px;
+}
+#boxes .boxes .text{
+    background-color: white;
+    margin-bottom: 1%;
+    border: black;
+    border-radius: 10px;
+    height: 140px;
+}
+/*end advantage section*/
+/*start about us  section*/
+.about{
+    background-color:rgba(7, 242, 230, 0.3);
+    height: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#about h1{
+    font-size: 3rem;
+    text-align: center;
+}
+h5{
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+}
+#about p{
+    font-size: 1rem;
+    margin-left: 5px;
+    color: black;
+}
+#about button{
+    border-radius: 40px; 
+    height: 35px;
+    width: 150px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/*end about us  section*/
+
+
+/*SERVICES section*/
+#services{
+    text-align: center;
+}
+#services .boxes{
+    display: inline-flex;
+    align-items: center;
+    margin-top: 3%;
+    text-align: center;
+    margin-left: 4.5%;
+}
+#services #box-1{
+    width: 250px;
+    border: black;
+    border-radius: 10px;
+    background-image: linear-gradient(white ,rgba(37, 211, 202, 0.3) 100%);
+    height: 220px;
+}
+#services #box-2{
+    margin-left: 6%;
+    border: black;
+    border-radius: 10px;
+    width: 250px;
+    height: 220px;
+    background-image: linear-gradient(white , rgba(37, 211, 202, 0.3) 100%);
+}
+#services #box-3{
+    margin-left: 6%;
+    border: black;
+    border-radius: 10px;
+    background-image: linear-gradient(white , rgba(37, 211, 202, 0.3) 100%);
+    width: 250px;
+    height: 220px;
+}
+#services #box-4{
+    margin-left: 6%;
+    margin-right: 1%;
+    width: 250px;
+    border: black;
+    border-radius: 10px;
+    background-image: linear-gradient(white , rgba(37, 211, 202, 0.3) 100%);
+    height: 220px;
+}
+#services .boxes h2{
+    font-size: 1rem;
+    text-align: center;
+}
+#services .boxes p{
+    font-size: .7rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    line-height: 0.9rem;
+}
+#services .boxes img{
+    margin-top: 0;
+    margin-bottom: 1%;
+    height: 80px;
+}
+#services .boxes .text{
+    border: black;
+    border-radius: 10px;
+    height: 120px;
+    padding: 7%;
+}
+#services .boxes a{
+    color: black;
+}
+/*end SERVICES section*/
+
+/*start people about us section*/
+
+#people .people-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18%;
+}
+#people .people-items{
+    flex-basis: 60%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction:  row;
+    padding: 15px;
+    margin: 10px 5%;
+    border-radius: 20px;
+    border-bottom: black solid;
+    border-top: black solid;
+    border-left: black solid;
+    border-right: black solid;
+}
+#people .people-items img{
+  margin-right: 20px;
+  margin-top: 3%;
+}
+#people .people-items h1{
+    font-size: 1.4rem;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    margin-top: 4%;
+}
+#people{
+  background-color: rgba(37, 211, 202, 0.3);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#people button{
+    border-radius: 10px;
+    height: 30px;
+    width: 40px;
+    background-color: gainsboro;
+    font-size: 15px;
+}
+#people button:hover{
+    background-color: black;
+    color: white;
+}
+#people button:active{
+    background-color: black;
+}
+/*End people about us section*/
+
+/*start skills section*/
+#our-progress .top{
+    text-align: center;
+    font-size: 20px;
+ }
+ .progress{
+    display: inline-flex;
+    text-align: center;
+    margin-left: 24%;
+    margin-top: 35px;
+    margin-bottom: 20px;
+ }
+ .progress .text{
+    font-size: 1rem;
+ }
+ .progress-circle {
+    font-size: 25px;
+    margin: 20px;
+    position: relative;
+    width: 5em;
+    height: 5em;
+    background-color: gainsboro; 
+    border-radius: 50%;
+    line-height: 5em;
+ }
+ 
+ .progress-circle:after{
+     border: none;
+     position: absolute;
+     top: 0.35em;
+     left: 0.35em;
+     text-align: center;
+     display: block;
+     border-radius: 50%;
+     width: 4.3em;
+     height: 4.3em;
+     background-color: white;
+     content: " ";
+ }
+ /* Text inside the control */
+ .progress-circle span {
+     position: absolute;
+     line-height: 5em;
+     width: 5em;
+     text-align: center;
+     display: block;
+     color: black;
+     z-index: 2;
+     font-size: 1.5rem;
+ }
+ .left-half-clipper { 
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    position: absolute; 
+    clip: rect(0, 5em, 5em, 2.5em);
+ }
+ .progress-circle.over50 .left-half-clipper {
+    clip: rect(auto,auto,auto,auto);
+ }
+ .value-bar {
+    position: absolute;
+    clip: rect(0, 2.5em, 5em, 0);
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: 0.45em solid rgba(37, 211, 202, 0.3);
+    box-sizing: border-box; 
+ }
+ .progress-circle.over50 .first50-bar {
+    position: absolute;
+    clip: rect(0, 5em, 5em, 2.5em);
+    background-color: rgba(37, 211, 202, 0.3);
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+ }
+ .progress-circle:not(.over50) .first50-bar{ display: none; }
+ 
+ 
+ /* Progress bar rotation position */
+ .progress-circle.p0 .value-bar { display: none; }
+ .progress-circle.p1 .value-bar { transform: rotate(4deg); }
+ .progress-circle.p2 .value-bar { transform: rotate(7deg); }
+ .progress-circle.p3 .value-bar { transform: rotate(11deg); }
+ .progress-circle.p4 .value-bar { transform: rotate(14deg); }
+ .progress-circle.p5 .value-bar { transform: rotate(18deg); }
+ .progress-circle.p6 .value-bar { transform: rotate(22deg); }
+ .progress-circle.p7 .value-bar { transform: rotate(25deg); }
+ .progress-circle.p8 .value-bar { transform: rotate(29deg); }
+ .progress-circle.p9 .value-bar { transform: rotate(32deg); }
+ .progress-circle.p10 .value-bar { transform: rotate(36deg); }
+ .progress-circle.p11 .value-bar { transform: rotate(40deg); }
+ .progress-circle.p12 .value-bar { transform: rotate(43deg); }
+ .progress-circle.p13 .value-bar { transform: rotate(47deg); }
+ .progress-circle.p14 .value-bar { transform: rotate(50deg); }
+ .progress-circle.p15 .value-bar { transform: rotate(54deg); }
+ .progress-circle.p16 .value-bar { transform: rotate(58deg); }
+ .progress-circle.p17 .value-bar { transform: rotate(61deg); }
+ .progress-circle.p18 .value-bar { transform: rotate(65deg); }
+ .progress-circle.p19 .value-bar { transform: rotate(68deg); }
+ .progress-circle.p20 .value-bar { transform: rotate(72deg); }
+ .progress-circle.p21 .value-bar { transform: rotate(76deg); }
+ .progress-circle.p22 .value-bar { transform: rotate(79deg); }
+ .progress-circle.p23 .value-bar { transform: rotate(83deg); }
+ .progress-circle.p24 .value-bar { transform: rotate(86deg); }
+ .progress-circle.p25 .value-bar { transform: rotate(90deg); }
+ .progress-circle.p26 .value-bar { transform: rotate(94deg); }
+ .progress-circle.p27 .value-bar { transform: rotate(97deg); }
+ .progress-circle.p28 .value-bar { transform: rotate(101deg); }
+ .progress-circle.p29 .value-bar { transform: rotate(104deg); }
+ .progress-circle.p30 .value-bar { transform: rotate(108deg); }
+ .progress-circle.p31 .value-bar { transform: rotate(112deg); }
+ .progress-circle.p32 .value-bar { transform: rotate(115deg); }
+ .progress-circle.p33 .value-bar { transform: rotate(119deg); }
+ .progress-circle.p34 .value-bar { transform: rotate(122deg); }
+ .progress-circle.p35 .value-bar { transform: rotate(126deg); }
+ .progress-circle.p36 .value-bar { transform: rotate(130deg); }
+ .progress-circle.p37 .value-bar { transform: rotate(133deg); }
+ .progress-circle.p38 .value-bar { transform: rotate(137deg); }
+ .progress-circle.p39 .value-bar { transform: rotate(140deg); }
+ .progress-circle.p40 .value-bar { transform: rotate(144deg); }
+ .progress-circle.p41 .value-bar { transform: rotate(148deg); }
+ .progress-circle.p42 .value-bar { transform: rotate(151deg); }
+ .progress-circle.p43 .value-bar { transform: rotate(155deg); }
+ .progress-circle.p44 .value-bar { transform: rotate(158deg); }
+ .progress-circle.p45 .value-bar { transform: rotate(162deg); }
+ .progress-circle.p46 .value-bar { transform: rotate(166deg); }
+ .progress-circle.p47 .value-bar { transform: rotate(169deg); }
+ .progress-circle.p48 .value-bar { transform: rotate(173deg); }
+ .progress-circle.p49 .value-bar { transform: rotate(176deg); }
+ .progress-circle.p50 .value-bar { transform: rotate(180deg); }
+ .progress-circle.p51 .value-bar { transform: rotate(184deg); }
+ .progress-circle.p52 .value-bar { transform: rotate(187deg); }
+ .progress-circle.p53 .value-bar { transform: rotate(191deg); }
+ .progress-circle.p54 .value-bar { transform: rotate(194deg); }
+ .progress-circle.p55 .value-bar { transform: rotate(198deg); }
+ .progress-circle.p56 .value-bar { transform: rotate(202deg); }
+ .progress-circle.p57 .value-bar { transform: rotate(205deg); }
+ .progress-circle.p58 .value-bar { transform: rotate(209deg); }
+ .progress-circle.p59 .value-bar { transform: rotate(212deg); }
+ .progress-circle.p60 .value-bar { transform: rotate(216deg); }
+ .progress-circle.p61 .value-bar { transform: rotate(220deg); }
+ .progress-circle.p62 .value-bar { transform: rotate(223deg); }
+ .progress-circle.p63 .value-bar { transform: rotate(227deg); }
+ .progress-circle.p64 .value-bar { transform: rotate(230deg); }
+ .progress-circle.p65 .value-bar { transform: rotate(234deg); }
+ .progress-circle.p66 .value-bar { transform: rotate(238deg); }
+ .progress-circle.p67 .value-bar { transform: rotate(241deg); }
+ .progress-circle.p68 .value-bar { transform: rotate(245deg); }
+ .progress-circle.p69 .value-bar { transform: rotate(248deg); }
+ .progress-circle.p70 .value-bar { transform: rotate(252deg); }
+ .progress-circle.p71 .value-bar { transform: rotate(256deg); }
+ .progress-circle.p72 .value-bar { transform: rotate(259deg); }
+ .progress-circle.p73 .value-bar { transform: rotate(263deg); }
+ .progress-circle.p74 .value-bar { transform: rotate(266deg); }
+ .progress-circle.p75 .value-bar { transform: rotate(270deg); }
+ .progress-circle.p76 .value-bar { transform: rotate(274deg); }
+ .progress-circle.p77 .value-bar { transform: rotate(277deg); }
+ .progress-circle.p78 .value-bar { transform: rotate(281deg); }
+ .progress-circle.p79 .value-bar { transform: rotate(284deg); }
+ .progress-circle.p80 .value-bar { transform: rotate(288deg); }
+ .progress-circle.p81 .value-bar { transform: rotate(292deg); }
+ .progress-circle.p82 .value-bar { transform: rotate(295deg); }
+ .progress-circle.p83 .value-bar { transform: rotate(299deg); }
+ .progress-circle.p84 .value-bar { transform: rotate(302deg); }
+ .progress-circle.p85 .value-bar { transform: rotate(306deg); }
+ .progress-circle.p86 .value-bar { transform: rotate(310deg); }
+ .progress-circle.p87 .value-bar { transform: rotate(313deg); }
+ .progress-circle.p88 .value-bar { transform: rotate(317deg); }
+ .progress-circle.p89 .value-bar { transform: rotate(320deg); }
+ .progress-circle.p90 .value-bar { transform: rotate(324deg); }
+ .progress-circle.p91 .value-bar { transform: rotate(328deg); }
+ .progress-circle.p92 .value-bar { transform: rotate(331deg); }
+ .progress-circle.p93 .value-bar { transform: rotate(335deg); }
+ .progress-circle.p94 .value-bar { transform: rotate(338deg); }
+ .progress-circle.p95 .value-bar { transform: rotate(342deg); }
+ .progress-circle.p96 .value-bar { transform: rotate(346deg); }
+ .progress-circle.p97 .value-bar { transform: rotate(349deg); }
+ .progress-circle.p98 .value-bar { transform: rotate(353deg); }
+ .progress-circle.p99 .value-bar { transform: rotate(356deg); }
+ .progress-circle.p100 .value-bar { transform: rotate(360deg); }
+
+/*end skills section*/
+
+/*start new project section*/
+#new-project{
+    background-color: rgba(37, 211, 202, 0.3);
+    height: 170px;
+}
+#new-project h1{
+    text-align: center;
+}
+.input{
+    margin-left: 15%;
+    margin-top: 20px;
+}
+#new-project input{
+    border-radius: 15px;
+    height: 35px;
+    width: 250px;
+    font-size: 1rem;
+} 
+#new-project .button{
+    background-color: rgba(12, 235, 223, 0.3);
+    width: 120px;
+    height: 35px;
+}
+#new-project .button:hover{
+    cursor: pointer;
+}
+/*end new project section*/
+/*start our contact  section*/
+
+#our-contact{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+    background-color: rgba(0, 255, 242, 0.3);
+    margin-top: -20px;
+}
+#our-contact .bottom ul li{
+    list-style: none;
+    display: inline;
+    cursor: pointer;
+    justify-content: space-around;
+}
+#our-contact .bottom ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/*end our contact  section*/
+/*start footer section*/
+#footer .footer{
+    display: inline-flex;
+}
+#footer .footer ul li{
+    list-style: none;
+    color: black;
+}
+#footer .footer ul li a{
+    color: black;
+    justify-content: space-around;
+}
+#footer .footer .c1{
+    margin-left: 7%;
+}
+#footer .footer .c2{
+    margin-left: 10%;
+}
+#footer .footer .c3{
+    margin-left: 20%;
+}
+#footer .footer .c4{
+    margin-left: 20%;
+}
+/*end footer section*/
